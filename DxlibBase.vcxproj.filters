@@ -98,6 +98,9 @@
     <Filter Include="system\ECS\Component">
       <UniqueIdentifier>{76647581-5af1-45bc-97fe-dac37ab80956}</UniqueIdentifier>
     </Filter>
+    <Filter Include="system\ECS\Input">
+      <UniqueIdentifier>{2a4b8d74-0663-40c8-9575-4938b79514b6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="program\GameManager.h">
