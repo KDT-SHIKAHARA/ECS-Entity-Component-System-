@@ -154,6 +154,7 @@
     <ClInclude Include="program\DebugLog.h" />
     <ClInclude Include="program\DebugScene.h" />
     <ClInclude Include="program\DebugSceneNum.h" />
+    <ClInclude Include="program\DrawableComp.h" />
     <ClInclude Include="program\flag.h" />
     <ClInclude Include="program\GameManager.h" />
     <ClInclude Include="program\GameObject.h" />
@@ -163,6 +164,7 @@
     <ClInclude Include="program\MapDrawer.h" />
     <ClInclude Include="program\MapLoader.h" />
     <ClInclude Include="program\ObjectType.h" />
+    <ClInclude Include="program\RigidbodyComp.h" />
     <ClInclude Include="program\power.h" />
     <ClInclude Include="program\Random.h" />
     <ClInclude Include="program\RemFPS.h" />
@@ -190,6 +192,7 @@
     <ClCompile Include="program\GameObject.cpp" />
     <ClCompile Include="program\input.cpp" />
     <ClCompile Include="program\MapLoader.cpp" />
+    <ClCompile Include="program\RigidbodyComp.cpp" />
     <ClCompile Include="program\Sound.cpp" />
     <ClCompile Include="program\SoundManager.cpp" />
     <ClCompile Include="program\transform.cpp" />

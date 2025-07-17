@@ -72,6 +72,7 @@ public:
 	//	--------------------------ローカル座標アクセサ--------------------------
 	void SetPosition(const Vector2D<float>& arg_position) { position_ = arg_position; }
 	Vector2D<float> position()const { return position_; }
+	void AddPosition(const Vector2D<float>& arg_position) { position_ += arg_position; }
 	void SetRotation(const float& arg_rotation) {rotation_= arg_rotation; }
 	float rotation()const { return rotation_; }
 	void SetScale(const Vector2D<float>& arg_scale) { scale_ = arg_scale; }

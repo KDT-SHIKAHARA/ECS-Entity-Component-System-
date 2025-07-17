@@ -157,6 +157,17 @@ Vector2D<T> operator * (const Vector2D<T>& value_1, const Vector2D<N>& value_2) 
 
 }
 
+
+// ope *
+template <typename T, typename N>
+Vector2D<T> operator * (const Vector2D<T>& value_1, const N& value_2) {
+	Vector2D<T> ret;
+	ret.x = value_1.x * value_2;
+	ret.y = value_1.y * value_2;
+	return ret;
+
+}
+
 // ope *
 template <typename T>
 Vector2D<T> operator * (const Vector2D<T>& value_1, const T& value_2) {
@@ -186,6 +197,17 @@ Vector2D<N> operator / (const Vector2D<T>& value_1, const Vector2D<N>& value_2) 
 	ret.y = value_1.y / value_2.y;
 	return ret;
 }
+
+// ope /
+template <typename T, typename N>
+Vector2D<T> operator / (const Vector2D<T>& value_1, const N & value_2) {
+	Vector2D<T> ret;
+	ret.x = value_1.x / value_2;
+	ret.y = value_1.y / value_2;
+	return ret;
+}
+
+
 
 // ope /
 template <typename T>

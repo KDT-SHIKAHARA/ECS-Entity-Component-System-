@@ -98,6 +98,12 @@
     <Filter Include="system\ECS\Component">
       <UniqueIdentifier>{76647581-5af1-45bc-97fe-dac37ab80956}</UniqueIdentifier>
     </Filter>
+    <Filter Include="system\ECS\Component\Base">
+      <UniqueIdentifier>{ebee0720-ef23-43d0-8d11-27d18266acaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\ECS\Component\Rigid">
+      <UniqueIdentifier>{9da7a768-a083-4f9e-9b74-0cdaeef381a2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="program\GameManager.h">
@@ -215,7 +221,13 @@
       <Filter>system\ECS\GameObject</Filter>
     </ClInclude>
     <ClInclude Include="program\Component.h">
-      <Filter>system\ECS\Component</Filter>
+      <Filter>system\ECS\Component\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="program\DrawableComp.h">
+      <Filter>system\ECS\Component\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="program\RigidbodyComp.h">
+      <Filter>system\ECS\Component\Rigid</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -245,6 +257,9 @@
     </ClCompile>
     <ClCompile Include="program\GameObject.cpp">
       <Filter>system\ECS\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="program\RigidbodyComp.cpp">
+      <Filter>system\ECS\Component\Rigid</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
