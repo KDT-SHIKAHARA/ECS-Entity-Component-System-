@@ -104,6 +104,15 @@
     <Filter Include="system\ECS\Component\Rigid">
       <UniqueIdentifier>{9da7a768-a083-4f9e-9b74-0cdaeef381a2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="system\map">
+      <UniqueIdentifier>{0b4df74f-4733-47e2-84a2-94c2e06816c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\!Test">
+      <UniqueIdentifier>{32407241-c037-4438-af2a-cfcfc0b4487a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\!Test\!Player">
+      <UniqueIdentifier>{82f0af35-1edb-4ae0-9ec5-3e2de46f1506}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="program\GameManager.h">
@@ -229,6 +238,9 @@
     <ClInclude Include="program\RigidbodyComp.h">
       <Filter>system\ECS\Component\Rigid</Filter>
     </ClInclude>
+    <ClInclude Include="program\TestPlayer.h">
+      <Filter>system\!Test\!Player</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="program\GameManager.cpp">
@@ -260,6 +272,9 @@
     </ClCompile>
     <ClCompile Include="program\RigidbodyComp.cpp">
       <Filter>system\ECS\Component\Rigid</Filter>
+    </ClCompile>
+    <ClCompile Include="program\TestPlayer.cpp">
+      <Filter>system\!Test\!Player</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

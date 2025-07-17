@@ -41,10 +41,10 @@ public:
 	std::shared_ptr<T> GetComponent()const;
 
 	//	全てのcomponentの更新を呼ぶ
-	void Update();
+	virtual void Update();
 
 	//	全てのcomponentの描画を呼ぶ
-	void Render();
+	virtual void Render();
 
 
 
@@ -59,7 +59,7 @@ inline std::shared_ptr<T> GameObject::AddComponent(Args&&... args){
 	//	付与したcomponentのGameObjectを自分にする。
 	comp->SetGameObj(shared_from_this());
 	//	T型と同じキーの型の中身に入れる。(すでにあればリセットされる)
-	components_[std::type_index(typeid (T)] = comp;
+	components_[std::type_index(typeid (T))] = comp;
 	//	作ったcomponentを一応返す
 	return comp;
 }
@@ -68,7 +68,7 @@ inline std::shared_ptr<T> GameObject::AddComponent(Args&&... args){
 template<typename T>
 inline std::shared_ptr<T> GameObject::GetComponent() const{
 	//	検索して、イテレータを格納 成功ならその場所のイテレータ、失敗なら.endを返す
-	auto ite = components_.find(std::type_index(typeid(T));
+	auto ite = components_.find(std::type_index(typeid(T)));
 	//	検索に成功しているかを判定
 	if (ite != components_.end()) {
 		//	基底クラス型から派生型にポインタを変換する。

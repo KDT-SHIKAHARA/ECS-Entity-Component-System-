@@ -3,6 +3,10 @@
 #include"Time.h"
 
 
+RigidbodyComp::RigidbodyComp(float arg_mass , Flag arg_isGravity, Flag arg_isStatic)
+	:mass_(arg_mass), velocity_(0,0), acceleration_(0,0), gravity_(0,0), totalForce_(0,0), damping_(0.0), isGravity_(arg_isGravity), isGrounded_(false),isStatic_(arg_isStatic)
+{}
+
 /// <summary>
 /// 外力の追加
 /// </summary>
@@ -36,14 +40,14 @@ void RigidbodyComp::Update(){
 
 		//	重力実行判定
 		if (isGravity_) {
-		
+
 			//	合計値 *= 重力定数 * 重さ 
 			totalForce_ += Vector2D<float>(0, kGravity * mass_);
 		}
 
 		//	加速度 = 外力 / 質量
 		acceleration_ = totalForce_ / mass_;
-		velocity_ += acceleration_ * deltaTime;
+		velocity_ += acceleration_;
 
 		//	減衰量 (等倍 - 減衰量)
 		velocity_ *= (1.0f - damping_);
@@ -52,6 +56,7 @@ void RigidbodyComp::Update(){
 		totalForce_.Clear();
 
 	}
+	
 
 	//	移動処理は常に行う
 	GameObj->transform.AddPosition(velocity_ * deltaTime);

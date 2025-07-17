@@ -18,6 +18,9 @@ public:
 	Flag isGrounded_;				//	地面に設置判定　true: 設置している	false:設置してない
 	Flag isStatic_;					//	物理挙動を行うかどうか true: 行う false: 行わない
 
+	RigidbodyComp(float arg_mass = 1.0f, Flag arg_isGravity = true, Flag arg_isStatic = true);
+	virtual ~RigidbodyComp() = default;
+
 	//	外力の加算
 	void AddForce(const Vector2D<float>& arg_force);
 

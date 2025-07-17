@@ -178,6 +178,7 @@
     <ClInclude Include="program\SoundType.h" />
     <ClInclude Include="program\StatusAlias.h" />
     <ClInclude Include="program\SystemConfig.h" />
+    <ClInclude Include="program\TestPlayer.h" />
     <ClInclude Include="program\TextureResource.h" />
     <ClInclude Include="program\TextureResourceMng.h" />
     <ClInclude Include="program\MapTile.h" />
@@ -195,6 +196,7 @@
     <ClCompile Include="program\RigidbodyComp.cpp" />
     <ClCompile Include="program\Sound.cpp" />
     <ClCompile Include="program\SoundManager.cpp" />
+    <ClCompile Include="program\TestPlayer.cpp" />
     <ClCompile Include="program\transform.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
