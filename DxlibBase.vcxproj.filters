@@ -116,7 +116,7 @@
     <Filter Include="system\map\Tile">
       <UniqueIdentifier>{6f99953e-75fe-4819-b485-da437a26caf8}</UniqueIdentifier>
     </Filter>
-    <Filter Include="system\map\Tile\MapData">
+    <Filter Include="system\map\MapData">
       <UniqueIdentifier>{a320815d-cc7a-4d61-9a06-f8ff8731e92d}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -251,7 +251,7 @@
       <Filter>system\map\Tile</Filter>
     </ClInclude>
     <ClInclude Include="program\MapData.h">
-      <Filter>system\map\Tile\MapData</Filter>
+      <Filter>system\map\MapData</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -289,7 +289,7 @@
       <Filter>system\!Test\!Player</Filter>
     </ClCompile>
     <ClCompile Include="program\MapData.cpp">
-      <Filter>system\map\Tile\MapData</Filter>
+      <Filter>system\map\MapData</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
