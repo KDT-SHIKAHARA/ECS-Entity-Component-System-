@@ -113,6 +113,12 @@
     <Filter Include="system\!Test\!Player">
       <UniqueIdentifier>{82f0af35-1edb-4ae0-9ec5-3e2de46f1506}</UniqueIdentifier>
     </Filter>
+    <Filter Include="system\map\Tile">
+      <UniqueIdentifier>{6f99953e-75fe-4819-b485-da437a26caf8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\map\Tile\MapData">
+      <UniqueIdentifier>{a320815d-cc7a-4d61-9a06-f8ff8731e92d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="program\GameManager.h">
@@ -242,10 +248,10 @@
       <Filter>system\!Test\!Player</Filter>
     </ClInclude>
     <ClInclude Include="program\Tile.h">
-      <Filter>system\map</Filter>
+      <Filter>system\map\Tile</Filter>
     </ClInclude>
-    <ClInclude Include="program\MapType.h">
-      <Filter>system\map</Filter>
+    <ClInclude Include="program\MapData.h">
+      <Filter>system\map\Tile\MapData</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -281,6 +287,9 @@
     </ClCompile>
     <ClCompile Include="program\TestPlayer.cpp">
       <Filter>system\!Test\!Player</Filter>
+    </ClCompile>
+    <ClCompile Include="program\MapData.cpp">
+      <Filter>system\map\Tile\MapData</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
