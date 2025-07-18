@@ -24,5 +24,5 @@ void MapData::LoadMapData(const std::string& filePath){
 /// <returns></returns>
 const Tile& MapData::GetTile(int arg_x, int arg_y) const {
 	if (arg_x < 0 || arg_y < 0 || arg_x >= map_max_w_ || arg_y >= map_max_h_) throw std::out_of_range("MapData::GetTile index over ");
-
+	return  tiles_[arg_y][arg_x];
 }
