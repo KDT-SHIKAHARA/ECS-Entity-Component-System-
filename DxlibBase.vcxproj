@@ -163,6 +163,7 @@
     <ClInclude Include="program\input.h" />
     <ClInclude Include="program\MapDrawer.h" />
     <ClInclude Include="program\MapLoader.h" />
+    <ClInclude Include="program\MapType.h" />
     <ClInclude Include="program\ObjectType.h" />
     <ClInclude Include="program\RigidbodyComp.h" />
     <ClInclude Include="program\power.h" />
@@ -182,6 +183,7 @@
     <ClInclude Include="program\TextureResource.h" />
     <ClInclude Include="program\TextureResourceMng.h" />
     <ClInclude Include="program\MapTile.h" />
+    <ClInclude Include="program\Tile.h" />
     <ClInclude Include="program\Time.h" />
     <ClInclude Include="program\transform.h" />
     <ClInclude Include="program\vector2d.h" />

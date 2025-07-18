@@ -241,6 +241,12 @@
     <ClInclude Include="program\TestPlayer.h">
       <Filter>system\!Test\!Player</Filter>
     </ClInclude>
+    <ClInclude Include="program\Tile.h">
+      <Filter>system\map</Filter>
+    </ClInclude>
+    <ClInclude Include="program\MapType.h">
+      <Filter>system\map</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="program\GameManager.cpp">
