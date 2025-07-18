@@ -1,26 +1,27 @@
 #pragma once
-#include"flag.h"
-#include"MapType.h"
-#include<stdexcept>
+
+//	作成日: 2025.7.18
+//	更新日:	2025.7.18
+//	作成者:	kirito shikahara
 
 
-class Tile {
-public:
-	Tile(int arg_type_num, Flag arg_isCollision = true):isCollision_(arg_isCollision){
-		if (arg_type_num >= static_cast<int>(MapType::Max)) {
-			throw std::out_of_range(" arg_type_num is Over number");
-		}
-		type_ = static_cast<MapType>(arg_type_num);
-	}
-	virtual ~Tile() = default;
+/// <summary>
+/// 現状は矩形同士かないので必要はないけど円との当たり判定をあとから追加できるように作っておきます
+/// もし修正をかけときはこれを使ってください、未来の俺へ
+/// </summary>
+enum class TileShape {
+	None,
+	Rect,
+	Circle,
+};
 
-	//	アクセサ
-	MapType GetType()const { return type_; }
-
-private:
-	MapType type_;	//	マップデータ番号
-public:
-	Flag isCollision_;	//	当たり判定を行うかどうか
-
+/// <summary>
+/// マップタイルはこのクラスを扱うマップデータクラスでしか直接中身を扱わないのでstructで
+/// カプセル化を重視するならclassでアクセサを作ります。
+/// </summary>
+struct Tile {
+	int id = 0;			//	種別識別
+	TileShape shape = TileShape::None;	//	形
+	bool isCollision = true;	//	当たり判定を行うかどうか
 };
 

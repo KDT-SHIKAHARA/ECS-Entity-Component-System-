@@ -1,44 +1,7 @@
-﻿  Color.cpp
-  DebugScene.cpp
-  GameManager.cpp
-  GameObject.cpp
-  input.cpp
-  MapLoader.cpp
-  RigidbodyComp.cpp
-C:\Users\com\source\repos\ECS-Entity-Component-System-\program\vector2d.h(165,20): warning C4244: '=': 'N' から 'T' への変換です。データが失われる可能性があります。
-C:\Users\com\source\repos\ECS-Entity-Component-System-\program\vector2d.h(165,20): warning C4244:         with
-C:\Users\com\source\repos\ECS-Entity-Component-System-\program\vector2d.h(165,20): warning C4244:         [
-C:\Users\com\source\repos\ECS-Entity-Component-System-\program\vector2d.h(165,20): warning C4244:             N=double
-C:\Users\com\source\repos\ECS-Entity-Component-System-\program\vector2d.h(165,20): warning C4244:         ]
-C:\Users\com\source\repos\ECS-Entity-Component-System-\program\vector2d.h(165,20): warning C4244:         and
-C:\Users\com\source\repos\ECS-Entity-Component-System-\program\vector2d.h(165,20): warning C4244:         [
-C:\Users\com\source\repos\ECS-Entity-Component-System-\program\vector2d.h(165,20): warning C4244:             T=float
-C:\Users\com\source\repos\ECS-Entity-Component-System-\program\vector2d.h(165,20): warning C4244:         ]
-  (ソース ファイル 'program/RigidbodyComp.cpp' をコンパイルしています)
-      C:\Users\com\source\repos\ECS-Entity-Component-System-\program\vector2d.h(165,20):
-      テンプレートインスタンス化コンテキスト (最初に最も古いもの) は
-          C:\Users\com\source\repos\ECS-Entity-Component-System-\program\RigidbodyComp.cpp(62,43):
-          コンパイル対象の関数 テンプレート インスタンス化 'Vector2D<float> operator *<float,double>(const Vector2D<float> &,const N &)' のリファレンスを確認してください
-          with
-          [
-              N=double
-          ]
-  
-C:\Users\com\source\repos\ECS-Entity-Component-System-\program\vector2d.h(166,20): warning C4244: '=': 'N' から 'T' への変換です。データが失われる可能性があります。
-C:\Users\com\source\repos\ECS-Entity-Component-System-\program\vector2d.h(166,20): warning C4244:         with
-C:\Users\com\source\repos\ECS-Entity-Component-System-\program\vector2d.h(166,20): warning C4244:         [
-C:\Users\com\source\repos\ECS-Entity-Component-System-\program\vector2d.h(166,20): warning C4244:             N=double
-C:\Users\com\source\repos\ECS-Entity-Component-System-\program\vector2d.h(166,20): warning C4244:         ]
-C:\Users\com\source\repos\ECS-Entity-Component-System-\program\vector2d.h(166,20): warning C4244:         and
-C:\Users\com\source\repos\ECS-Entity-Component-System-\program\vector2d.h(166,20): warning C4244:         [
-C:\Users\com\source\repos\ECS-Entity-Component-System-\program\vector2d.h(166,20): warning C4244:             T=float
-C:\Users\com\source\repos\ECS-Entity-Component-System-\program\vector2d.h(166,20): warning C4244:         ]
-  (ソース ファイル 'program/RigidbodyComp.cpp' をコンパイルしています)
-  
-  Sound.cpp
-C:\Users\com\source\repos\ECS-Entity-Component-System-\program\Sound.cpp(23,19): warning C4244: '初期化中': 'float' から 'int' への変換です。データが失われる可能性があります。
-  SoundManager.cpp
-  TestPlayer.cpp
+﻿  MapData.cpp
   transform.cpp
+C:\Users\kirit\source\repos\ECS-Entity-Component-System-\program\MapData.cpp(14,29): warning C4267: '=': 'size_t' から 'int' に変換しました。データが失われているかもしれません。
+C:\Users\kirit\source\repos\ECS-Entity-Component-System-\program\MapData.cpp(15,26): warning C4267: '=': 'size_t' から 'int' に変換しました。データが失われているかもしれません。
   コードを生成中...
-  DxlibBase.vcxproj -> C:\Users\com\Source\Repos\ECS-Entity-Component-System-\x64\Debug\DxlibBase.exe
+C:\Users\kirit\source\repos\ECS-Entity-Component-System-\program\MapData.cpp(28,1): warning C4715: 'MapData::GetTile': 値を返さないコントロール パスがあります。
+  DxlibBase.vcxproj -> C:\Users\kirit\Source\Repos\ECS-Entity-Component-System-\x64\Debug\DxlibBase.exe
