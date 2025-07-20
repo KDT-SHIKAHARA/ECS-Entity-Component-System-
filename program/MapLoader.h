@@ -1,14 +1,11 @@
 #pragma once
-#include<vector>
 #include<string>
-#include"MapTile.h"
-
-
-using MapTiles = std::vector<std::vector<MapTile>>;
+#include<vector>
+#include"Tile.h"
 
 class MapLoader {
-	static std::vector<MapTile> split(const std::string& str, char delimiter = ',');
-	static bool CheckCollision(int arg_id);
+	static std::vector<Tile> split(const std::string& str, char delimiter = ',');
+	static bool CheckCollisionFlag(int map_num);
 public:
-	static MapTiles Load(const std::string& mapDataFilePath);
+	static std::vector<std::vector<Tile>> Load(const std::string& filepath);
 };

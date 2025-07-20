@@ -68,23 +68,11 @@
     <Filter Include="system\define\color">
       <UniqueIdentifier>{83f554b4-cf83-45cf-b8c4-43f5ceaf587a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Game\map">
-      <UniqueIdentifier>{7f9e74e1-52d1-458e-845c-99323909677a}</UniqueIdentifier>
-    </Filter>
     <Filter Include="system\sound">
       <UniqueIdentifier>{fb603782-ec53-4a81-94dc-0a601bd51dcd}</UniqueIdentifier>
     </Filter>
     <Filter Include="system\Save">
       <UniqueIdentifier>{bbf8fa8f-c058-494f-b32b-7c488bd03646}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Game\map\MapData">
-      <UniqueIdentifier>{0374fbda-c51f-400f-8712-33d71b9f25ca}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Game\map\Chip">
-      <UniqueIdentifier>{40c4985f-de38-4ca0-b7e1-69e482fe0b84}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Game\map\MapDrawer">
-      <UniqueIdentifier>{cc71855c-38eb-4c16-8555-5fa4be743220}</UniqueIdentifier>
     </Filter>
     <Filter Include="system\transform">
       <UniqueIdentifier>{e4a24005-8a9b-4bee-8d3b-1059bcef736f}</UniqueIdentifier>
@@ -118,6 +106,9 @@
     </Filter>
     <Filter Include="system\map\MapData">
       <UniqueIdentifier>{a320815d-cc7a-4d61-9a06-f8ff8731e92d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\map\MapLoader">
+      <UniqueIdentifier>{71486d12-c1c4-4ee7-a9ac-5cdd2b159544}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -217,15 +208,6 @@
     <ClInclude Include="program\SoundPathTable .h">
       <Filter>system\sound</Filter>
     </ClInclude>
-    <ClInclude Include="program\MapTile.h">
-      <Filter>Game\map\Chip</Filter>
-    </ClInclude>
-    <ClInclude Include="program\MapLoader.h">
-      <Filter>Game\map\MapData</Filter>
-    </ClInclude>
-    <ClInclude Include="program\MapDrawer.h">
-      <Filter>Game\map\MapDrawer</Filter>
-    </ClInclude>
     <ClInclude Include="program\SaveData.h">
       <Filter>system\Save</Filter>
     </ClInclude>
@@ -253,6 +235,9 @@
     <ClInclude Include="program\MapData.h">
       <Filter>system\map\MapData</Filter>
     </ClInclude>
+    <ClInclude Include="program\MapLoader.h">
+      <Filter>system\map\MapLoader</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="program\GameManager.cpp">
@@ -273,9 +258,6 @@
     <ClCompile Include="program\SoundManager.cpp">
       <Filter>system\sound</Filter>
     </ClCompile>
-    <ClCompile Include="program\MapLoader.cpp">
-      <Filter>Game\map\MapData</Filter>
-    </ClCompile>
     <ClCompile Include="program\transform.cpp">
       <Filter>system\transform</Filter>
     </ClCompile>
@@ -290,6 +272,9 @@
     </ClCompile>
     <ClCompile Include="program\MapData.cpp">
       <Filter>system\map\MapData</Filter>
+    </ClCompile>
+    <ClCompile Include="program\MapLoader.cpp">
+      <Filter>system\map\MapLoader</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

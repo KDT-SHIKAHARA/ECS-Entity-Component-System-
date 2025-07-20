@@ -1,6 +1,6 @@
 #include "MapData.h"
 #include<stdexcept>
-
+#include"MapLoader.h"
 
 /// <summary>
 /// ファイル読込クラスの読込メソッドを作って、マップデータを入れたTiles型のオブジェクトを返す
@@ -8,6 +8,7 @@
 /// <param name="filePath"> マップデータが入っているファイル </param>
 void MapData::LoadMapData(const std::string& filePath){
 	//	読込メソッド
+	tiles_ = MapLoader::Load(filePath);
 
 	//	サイズ取得
 	if (!tiles_.empty()) return;
@@ -17,12 +18,12 @@ void MapData::LoadMapData(const std::string& filePath){
 
 /// <summary>
 /// 指定したインデックスのタイルのconst参照を返す。
-/// インデックスが範囲外なら　デバック段階ではエラーを吐かせる。製品状態とデバック状態で切り替える
+/// インデックスが範囲外なら例外を吐く
 /// </summary>
 /// <param name="arg_x"> 第二要素数のインデックス </param>
 /// <param name="arg_y"> 第一要素数のインデックス </param>
 /// <returns></returns>
-const Tile& MapData::GetTile(int arg_x, int arg_y) const {
-	if (arg_x < 0 || arg_y < 0 || arg_x >= map_max_w_ || arg_y >= map_max_h_) throw std::out_of_range("MapData::GetTile index over ");
-	return  tiles_[arg_y][arg_x];
+const Tile& MapData::GetTile(int index_x, int index_y) const {
+	if (index_x < 0 || index_y < 0 || index_x >= map_max_w_ || index_y >= map_max_h_) throw std::out_of_range("MapData::GetTile index over ");
+	return  tiles_[index_y][index_x];
 }

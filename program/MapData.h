@@ -18,7 +18,7 @@ public:
 	void LoadMapData(const std::string& filePath);
 
 	//	タイルの参照を取得（変更不可）
-	const Tile& GetTile(int arg_x, int arg_y) const ;
+	const Tile& GetTile(int index_x, int index_y) const ;
 
 	//	マップサイズの取得
 	int GetMapW()const { return map_max_w_; }

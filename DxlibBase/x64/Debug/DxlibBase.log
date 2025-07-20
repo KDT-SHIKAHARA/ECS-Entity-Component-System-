@@ -1,7 +1,4 @@
 ﻿  MapData.cpp
-  transform.cpp
 C:\Users\kirit\source\repos\ECS-Entity-Component-System-\program\MapData.cpp(14,29): warning C4267: '=': 'size_t' から 'int' に変換しました。データが失われているかもしれません。
 C:\Users\kirit\source\repos\ECS-Entity-Component-System-\program\MapData.cpp(15,26): warning C4267: '=': 'size_t' から 'int' に変換しました。データが失われているかもしれません。
-  コードを生成中...
-C:\Users\kirit\source\repos\ECS-Entity-Component-System-\program\MapData.cpp(28,1): warning C4715: 'MapData::GetTile': 値を返さないコントロール パスがあります。
-  DxlibBase.vcxproj -> C:\Users\kirit\Source\Repos\ECS-Entity-Component-System-\x64\Debug\DxlibBase.exe
+  DxlibBase.vcxproj -> C:\Users\kirit\source\repos\ECS-Entity-Component-System-\x64\Debug\DxlibBase.exe
