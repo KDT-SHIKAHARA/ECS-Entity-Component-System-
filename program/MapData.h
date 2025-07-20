@@ -11,7 +11,7 @@ class MapData final{
 	using Tiles = std::vector<std::vector<Tile>>;
 
 public:
-	MapData() = default;
+	MapData();
 	virtual ~MapData() = default;
 
 	//	マップデータの読込
@@ -24,11 +24,13 @@ public:
 	int GetMapW()const { return map_max_w_; }
 	int GetMapH()const { return map_max_h_; }
 
+	//	タイルのサイズ取得
+	int GetTileSize()const { return tile_size_; }
 
 private:
 
-	//	.size()で取得してるとメソッド呼び出しのコストがかかるので、
-	//	ファイルから読み込んだ時点で確定してるのでフィールドを作ったほうが効率がいい
+	int tile_size_;
+
 	int map_max_w_;	//	マップの横の最大数
 	int map_max_h_;	//	マップの縦の最大数
 

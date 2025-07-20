@@ -110,6 +110,12 @@
     <Filter Include="system\map\MapLoader">
       <UniqueIdentifier>{71486d12-c1c4-4ee7-a9ac-5cdd2b159544}</UniqueIdentifier>
     </Filter>
+    <Filter Include="system\map\MapRender">
+      <UniqueIdentifier>{bc655f90-6eee-4145-a1df-13979c2da810}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\Camera">
+      <UniqueIdentifier>{1d5958fe-b59a-4599-a4a3-a91c456765ce}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="program\GameManager.h">
@@ -238,6 +244,12 @@
     <ClInclude Include="program\MapLoader.h">
       <Filter>system\map\MapLoader</Filter>
     </ClInclude>
+    <ClInclude Include="program\MapRender.h">
+      <Filter>system\map\MapRender</Filter>
+    </ClInclude>
+    <ClInclude Include="program\Camera.h">
+      <Filter>system\Camera</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="program\GameManager.cpp">
@@ -275,6 +287,9 @@
     </ClCompile>
     <ClCompile Include="program\MapLoader.cpp">
       <Filter>system\map\MapLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="program\MapRender.cpp">
+      <Filter>system\map\MapRender</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -2,6 +2,10 @@
 #include<stdexcept>
 #include"MapLoader.h"
 
+//	初期化
+MapData::MapData():tile_size_(32), map_max_w_(0), map_max_h_(0){
+}
+
 /// <summary>
 /// ファイル読込クラスの読込メソッドを作って、マップデータを入れたTiles型のオブジェクトを返す
 /// </summary>

@@ -144,6 +144,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="program\BoxCollider.h" />
+    <ClInclude Include="program\Camera.h" />
     <ClInclude Include="program\CheckCollider.h" />
     <ClInclude Include="program\CircleCollider.h" />
     <ClInclude Include="program\Collider.h" />
@@ -163,6 +164,7 @@
     <ClInclude Include="program\input.h" />
     <ClInclude Include="program\MapData.h" />
     <ClInclude Include="program\MapLoader.h" />
+    <ClInclude Include="program\MapRender.h" />
     <ClInclude Include="program\ObjectType.h" />
     <ClInclude Include="program\RigidbodyComp.h" />
     <ClInclude Include="program\power.h" />
@@ -194,6 +196,7 @@
     <ClCompile Include="program\input.cpp" />
     <ClCompile Include="program\MapData.cpp" />
     <ClCompile Include="program\MapLoader.cpp" />
+    <ClCompile Include="program\MapRender.cpp" />
     <ClCompile Include="program\RigidbodyComp.cpp" />
     <ClCompile Include="program\Sound.cpp" />
     <ClCompile Include="program\SoundManager.cpp" />
