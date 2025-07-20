@@ -1,12 +1,2 @@
-﻿  MapData.cpp
-  MapLoader.cpp
-C:\Users\kirit\source\repos\ECS-Entity-Component-System-\program\MapData.h(28,2): error C2143: 構文エラー: ';' が '}' の前にありません。
-  (ソース ファイル 'program/MapData.cpp' をコンパイルしています)
-  
-C:\Users\kirit\source\repos\ECS-Entity-Component-System-\program\MapData.cpp(15,29): warning C4267: '=': 'size_t' から 'int' に変換しました。データが失われているかもしれません。
-C:\Users\kirit\source\repos\ECS-Entity-Component-System-\program\MapData.cpp(16,26): warning C4267: '=': 'size_t' から 'int' に変換しました。データが失われているかもしれません。
-C:\Users\kirit\source\repos\ECS-Entity-Component-System-\program\MapLoader.cpp(12,77): error C2572: 'MapLoader::split' : 既定引数の再定義: パラメーター 1
-      C:\Users\kirit\source\repos\ECS-Entity-Component-System-\program\MapLoader.h(7,27):
-      'MapLoader::split' の宣言を確認してください
-  
-  コードを生成中...
+﻿  MapResHandle.cpp
+  DxlibBase.vcxproj -> C:\Users\kirit\source\repos\ECS-Entity-Component-System-\x64\Debug\DxlibBase.exe

@@ -11,6 +11,7 @@ class MapRender {
 
 	//	ƒ^ƒCƒ‹‰æ‘œ‚ğ“Ç‚İ‚Ş
 
+
 public:
 	void Render(const MapData& mapData, const Camera& camera);
 private:

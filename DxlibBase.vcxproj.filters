@@ -116,6 +116,12 @@
     <Filter Include="system\Camera">
       <UniqueIdentifier>{1d5958fe-b59a-4599-a4a3-a91c456765ce}</UniqueIdentifier>
     </Filter>
+    <Filter Include="system\map\ResourceHandle">
+      <UniqueIdentifier>{a14ba241-551c-4d7d-addf-69f0494715a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\tinyxml12">
+      <UniqueIdentifier>{949e1ade-b2ae-4512-aa15-99671c68d75a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="program\GameManager.h">
@@ -250,6 +256,9 @@
     <ClInclude Include="program\Camera.h">
       <Filter>system\Camera</Filter>
     </ClInclude>
+    <ClInclude Include="program\MapResHandle.h">
+      <Filter>system\map\ResourceHandle</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="program\GameManager.cpp">
@@ -290,6 +299,12 @@
     </ClCompile>
     <ClCompile Include="program\MapRender.cpp">
       <Filter>system\map\MapRender</Filter>
+    </ClCompile>
+    <ClCompile Include="program\MapResHandle.cpp">
+      <Filter>system\map\ResourceHandle</Filter>
+    </ClCompile>
+    <ClCompile Include="library\tinyxml12\tinyxml2.cpp">
+      <Filter>system\tinyxml12</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

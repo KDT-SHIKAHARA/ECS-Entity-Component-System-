@@ -10,7 +10,7 @@
 /// <param name="str"> ファイルから読み込んだ1行単位 </param>
 /// <param name="delimiter"> 区切る文字 </param>
 /// <returns> 1行単位のTileクラス達 </returns>
-std::vector<Tile> MapLoader::split(const std::string& str, char delimiter = ',') {
+std::vector<Tile> MapLoader::split(const std::string& str, char delimiter) {
 	std::vector<Tile> tmp_row;	
 	std::istringstream tmp_csvLine(str);
 	std::string tmp_strBuf;	
