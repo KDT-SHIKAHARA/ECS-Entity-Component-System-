@@ -10,7 +10,7 @@ class MapRender {
 	using TexturePtr_map = std::unordered_map<int, std::shared_ptr<TextureResource>>;
 
 	//	ƒ^ƒCƒ‹‰æ‘œ‚ğ“Ç‚İ‚Ş
-
+	void LoadTexture(const std::unordered_map<int, std::string>& tiles_file_path);
 
 public:
 	void Render(const MapData& mapData, const Camera& camera);

@@ -191,6 +191,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="library\tinyxml12\tinyxml2.cpp" />
+    <ClCompile Include="program\Camera.cpp" />
     <ClCompile Include="program\Color.cpp" />
     <ClCompile Include="program\DebugScene.cpp" />
     <ClCompile Include="program\GameManager.cpp" />

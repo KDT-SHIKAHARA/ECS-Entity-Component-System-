@@ -306,5 +306,8 @@
     <ClCompile Include="library\tinyxml12\tinyxml2.cpp">
       <Filter>system\tinyxml12</Filter>
     </ClCompile>
+    <ClCompile Include="program\Camera.cpp">
+      <Filter>system\Camera</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
