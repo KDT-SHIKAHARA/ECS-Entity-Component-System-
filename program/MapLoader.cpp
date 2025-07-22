@@ -45,7 +45,7 @@ std::vector<std::vector<Tile>> MapLoader::Load(const std::string& filepath) {
 
 	//	全て取得	
 	while (std::getline(file, tmp_line_str)) {
-		split(tmp_line_str);
+		tmp_map_data.push_back(split(tmp_line_str));
 	}
 	
 	//	マップデータを格納したTileのコレクションを返す

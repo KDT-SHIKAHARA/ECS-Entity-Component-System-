@@ -164,9 +164,11 @@
     <ClInclude Include="program\input.h" />
     <ClInclude Include="program\MapData.h" />
     <ClInclude Include="program\MapLoader.h" />
+    <ClInclude Include="program\MapManager.h" />
     <ClInclude Include="program\MapRender.h" />
     <ClInclude Include="program\MapResHandle.h" />
     <ClInclude Include="program\ObjectType.h" />
+    <ClInclude Include="program\Rect.h" />
     <ClInclude Include="program\RigidbodyComp.h" />
     <ClInclude Include="program\power.h" />
     <ClInclude Include="program\Random.h" />
@@ -199,6 +201,7 @@
     <ClCompile Include="program\input.cpp" />
     <ClCompile Include="program\MapData.cpp" />
     <ClCompile Include="program\MapLoader.cpp" />
+    <ClCompile Include="program\MapManager.cpp" />
     <ClCompile Include="program\MapRender.cpp" />
     <ClCompile Include="program\MapResHandle.cpp" />
     <ClCompile Include="program\RigidbodyComp.cpp" />

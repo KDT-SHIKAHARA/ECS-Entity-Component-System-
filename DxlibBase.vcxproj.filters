@@ -122,6 +122,15 @@
     <Filter Include="system\tinyxml12">
       <UniqueIdentifier>{949e1ade-b2ae-4512-aa15-99671c68d75a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="system\map\Manager">
+      <UniqueIdentifier>{7f02a4eb-1bae-4e67-a17c-e38039701088}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\Math2D">
+      <UniqueIdentifier>{78dce810-2d72-4a0b-9a06-342db5e60288}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\ECS\Component\collider">
+      <UniqueIdentifier>{5c45a9d2-0353-4bf0-9663-51191b841eea}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="program\GameManager.h">
@@ -259,6 +268,12 @@
     <ClInclude Include="program\MapResHandle.h">
       <Filter>system\map\ResourceHandle</Filter>
     </ClInclude>
+    <ClInclude Include="program\MapManager.h">
+      <Filter>system\map\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="program\Rect.h">
+      <Filter>system\Math2D</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="program\GameManager.cpp">
@@ -308,6 +323,9 @@
     </ClCompile>
     <ClCompile Include="program\Camera.cpp">
       <Filter>system\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="program\MapManager.cpp">
+      <Filter>system\map\Manager</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -14,10 +14,10 @@ void MapData::LoadMapData(const std::string& filePath){
 	//	読込メソッド
 	tiles_ = MapLoader::Load(filePath);
 
-	//	サイズ取得
-	if (!tiles_.empty()) return;
+	////	サイズ取得
 	map_max_w_ = tiles_[0].size();
 	map_max_h_ = tiles_.size();
+
 }
 
 /// <summary>

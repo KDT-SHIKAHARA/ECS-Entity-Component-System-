@@ -9,4 +9,5 @@ public:
 	virtual ~Camera() = default;
 	Vector2D<float> position()const { return position_; }
 	Vector2D<float> area_size()const { return area_size_; }
+
 };

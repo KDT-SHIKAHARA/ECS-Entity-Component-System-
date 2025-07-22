@@ -1,24 +1,5 @@
-﻿  Camera.cpp
-  MapRender.cpp
+﻿  DebugScene.cpp
+  GameManager.cpp
+  MapManager.cpp
   コードを生成中...
-C:\Users\kirit\source\repos\ECS-Entity-Component-System-\program\MapRender.cpp(26,11): warning C4244: '初期化中': 'T' から 'int' への変換です。データが失われる可能性があります。
-C:\Users\kirit\source\repos\ECS-Entity-Component-System-\program\MapRender.cpp(26,11): warning C4244:         with
-C:\Users\kirit\source\repos\ECS-Entity-Component-System-\program\MapRender.cpp(26,11): warning C4244:         [
-C:\Users\kirit\source\repos\ECS-Entity-Component-System-\program\MapRender.cpp(26,11): warning C4244:             T=float
-C:\Users\kirit\source\repos\ECS-Entity-Component-System-\program\MapRender.cpp(26,11): warning C4244:         ]
-C:\Users\kirit\source\repos\ECS-Entity-Component-System-\program\MapRender.cpp(27,12): warning C4244: '初期化中': 'T' から 'int' への変換です。データが失われる可能性があります。
-C:\Users\kirit\source\repos\ECS-Entity-Component-System-\program\MapRender.cpp(27,12): warning C4244:         with
-C:\Users\kirit\source\repos\ECS-Entity-Component-System-\program\MapRender.cpp(27,12): warning C4244:         [
-C:\Users\kirit\source\repos\ECS-Entity-Component-System-\program\MapRender.cpp(27,12): warning C4244:             T=float
-C:\Users\kirit\source\repos\ECS-Entity-Component-System-\program\MapRender.cpp(27,12): warning C4244:         ]
-C:\Users\kirit\source\repos\ECS-Entity-Component-System-\program\MapRender.cpp(28,10): warning C4244: '初期化中': 'T' から 'int' への変換です。データが失われる可能性があります。
-C:\Users\kirit\source\repos\ECS-Entity-Component-System-\program\MapRender.cpp(28,10): warning C4244:         with
-C:\Users\kirit\source\repos\ECS-Entity-Component-System-\program\MapRender.cpp(28,10): warning C4244:         [
-C:\Users\kirit\source\repos\ECS-Entity-Component-System-\program\MapRender.cpp(28,10): warning C4244:             T=float
-C:\Users\kirit\source\repos\ECS-Entity-Component-System-\program\MapRender.cpp(28,10): warning C4244:         ]
-C:\Users\kirit\source\repos\ECS-Entity-Component-System-\program\MapRender.cpp(29,13): warning C4244: '初期化中': 'T' から 'int' への変換です。データが失われる可能性があります。
-C:\Users\kirit\source\repos\ECS-Entity-Component-System-\program\MapRender.cpp(29,13): warning C4244:         with
-C:\Users\kirit\source\repos\ECS-Entity-Component-System-\program\MapRender.cpp(29,13): warning C4244:         [
-C:\Users\kirit\source\repos\ECS-Entity-Component-System-\program\MapRender.cpp(29,13): warning C4244:             T=float
-C:\Users\kirit\source\repos\ECS-Entity-Component-System-\program\MapRender.cpp(29,13): warning C4244:         ]
   DxlibBase.vcxproj -> C:\Users\kirit\source\repos\ECS-Entity-Component-System-\x64\Debug\DxlibBase.exe

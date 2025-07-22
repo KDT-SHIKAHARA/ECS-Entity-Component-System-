@@ -14,10 +14,12 @@ public:
 	//	画像ハンドルの設定
 	TextureResource(int arg_handle) {
 		this->handle = arg_handle;
+
 	}
 
 	//	画像ハンドルの取得
 	int GetHandle()const {
+
 		return handle;
 	}
 };

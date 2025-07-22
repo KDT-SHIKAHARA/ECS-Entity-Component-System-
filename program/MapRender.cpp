@@ -1,6 +1,7 @@
 #include"MapRender.h"
 #include"TextureResourceMng.h"
 #include"dxlib.h"
+#include"GetColor.h"
 
 /// <summary>
 /// ファイルパス管理からファイルパスを取得して、テクスチャを読み込んでいる
@@ -44,6 +45,12 @@ void MapRender::Render(const MapData& mapData, const Camera& camera) {
 			int drawY = y * map_size - camera_pos.y + camera_size.y / 2;
 
 			//	描画
+			if (tile.id > 1) {
+				int a = 0;
+			}
+
+
+			DrawBox(drawX, drawY, drawX + map_size, drawY + map_size, BLUE, TRUE);
 			DrawGraph(drawX, drawY, tile_textures_[tile.id]->GetHandle(), TRUE);
 		}
 	}

@@ -7,6 +7,7 @@ C:\Users\kirit\source\repos\ECS-Entity-Component-System-\program\GameObject.cpp;
 C:\Users\kirit\source\repos\ECS-Entity-Component-System-\program\input.cpp;C:\Users\kirit\source\repos\ECS-Entity-Component-System-\DxlibBase\x64\Debug\input.obj
 C:\Users\kirit\source\repos\ECS-Entity-Component-System-\program\MapData.cpp;C:\Users\kirit\source\repos\ECS-Entity-Component-System-\DxlibBase\x64\Debug\MapData.obj
 C:\Users\kirit\source\repos\ECS-Entity-Component-System-\program\MapLoader.cpp;C:\Users\kirit\source\repos\ECS-Entity-Component-System-\DxlibBase\x64\Debug\MapLoader.obj
+C:\Users\kirit\source\repos\ECS-Entity-Component-System-\program\MapManager.cpp;C:\Users\kirit\source\repos\ECS-Entity-Component-System-\DxlibBase\x64\Debug\MapManager.obj
 C:\Users\kirit\source\repos\ECS-Entity-Component-System-\program\MapRender.cpp;C:\Users\kirit\source\repos\ECS-Entity-Component-System-\DxlibBase\x64\Debug\MapRender.obj
 C:\Users\kirit\source\repos\ECS-Entity-Component-System-\program\MapResHandle.cpp;C:\Users\kirit\source\repos\ECS-Entity-Component-System-\DxlibBase\x64\Debug\MapResHandle.obj
 C:\Users\kirit\source\repos\ECS-Entity-Component-System-\program\RigidbodyComp.cpp;C:\Users\kirit\source\repos\ECS-Entity-Component-System-\DxlibBase\x64\Debug\RigidbodyComp.obj

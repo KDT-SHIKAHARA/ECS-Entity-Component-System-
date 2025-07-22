@@ -10,6 +10,7 @@ SceneDebug::SceneDebug(){
 	auto player = std::make_shared<TestPlayer>();
 	player->SetComponents();
 	testPlayer = player;
+	map.Load();
 }
 
 void SceneDebug::Update(){
@@ -19,5 +20,6 @@ void SceneDebug::Update(){
 void SceneDebug::Render()
 {
 	DEBUG_LOG("debug scene");
+	map.Render(camera);
 	testPlayer->Render();
 }

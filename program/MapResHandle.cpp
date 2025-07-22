@@ -45,7 +45,7 @@ void TileTextureRegistry::LoadFilesPath(const std::string& xml_path) {
     tiles_file_path_.clear();
 
     //  ルートの要素を順番に読み込む
-    for (const _TINYXML XMLElement* tileElement = root->FirstChildElement("Tile"); //  ルート中身を検索
+    for (const _TINYXML XMLElement* tileElement = root->FirstChildElement(tmp_root_second.c_str()); //  ルート中身を検索
         tileElement != nullptr; //  tileElementに中身が存在している間はループ
         tileElement = tileElement->NextSiblingElement(tmp_root_second.c_str())) {   //  ルートの下の階層のモノを取得する
 
@@ -62,6 +62,8 @@ void TileTextureRegistry::LoadFilesPath(const std::string& xml_path) {
 
         //  ベースパスとファイルパスを読み込んだIDをkeyにもつコレクションに入れる
         tiles_file_path_[tmp_id] = tiles_base_path_ + fileAttr;
+        int a;
+
     }
 }
 
