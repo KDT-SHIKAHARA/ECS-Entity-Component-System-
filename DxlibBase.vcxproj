@@ -143,12 +143,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="program\BoxCollider.h" />
     <ClInclude Include="program\Camera.h" />
-    <ClInclude Include="program\CheckCollider.h" />
-    <ClInclude Include="program\CircleCollider.h" />
-    <ClInclude Include="program\Collider.h" />
-    <ClInclude Include="program\ColliderManager.h" />
+    <ClInclude Include="program\ColliderComp.h" />
     <ClInclude Include="program\Color.h" />
     <ClInclude Include="program\Component.h" />
     <ClInclude Include="program\debugDef.h" />
@@ -167,7 +163,6 @@
     <ClInclude Include="program\MapManager.h" />
     <ClInclude Include="program\MapRender.h" />
     <ClInclude Include="program\MapResHandle.h" />
-    <ClInclude Include="program\ObjectType.h" />
     <ClInclude Include="program\Rect.h" />
     <ClInclude Include="program\RigidbodyComp.h" />
     <ClInclude Include="program\power.h" />

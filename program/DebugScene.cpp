@@ -15,6 +15,7 @@ SceneDebug::SceneDebug(){
 
 void SceneDebug::Update(){
 	testPlayer->Update();
+	map.CheckCollision(*testPlayer);
 }
 
 void SceneDebug::Render()

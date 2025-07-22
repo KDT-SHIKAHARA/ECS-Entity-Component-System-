@@ -27,6 +27,17 @@ public:
 	//	タイルのサイズ取得
 	int GetTileSize()const { return tile_size_; }
 
+	/// <summary>
+	/// マップのインデックス内か判定
+	/// </summary>
+	/// <param name="map_x"> index X </param>
+	/// <param name="map_y"> index Y </param>
+	/// <returns> true: マップ内 false: マップ外 </returns>
+	bool IsInMap(int map_x,int map_y){
+		return !(map_x < 0 || map_y < 0 ||
+			map_x >= map_max_w_ || map_y >= map_max_h_);
+	}
+
 private:
 
 	int tile_size_;

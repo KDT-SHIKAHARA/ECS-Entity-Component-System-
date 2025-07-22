@@ -27,6 +27,9 @@ public:
 	//	移動ベクトルセット
 	void SetVelocity(const Vector2D<float>&arg_velocity);
 
+	//	移動ベクトルの取得
+	Vector2D<float> velocity()const { return velocity_; }
+
 	//	更新
 	void Update()override;
 

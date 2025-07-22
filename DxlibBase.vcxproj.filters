@@ -62,9 +62,6 @@
     <Filter Include="system\status">
       <UniqueIdentifier>{daa7ed46-412f-4ecc-a2d0-8b60605b7d2b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="system\collider">
-      <UniqueIdentifier>{59576aab-72ef-4aa0-972b-4d49edebd763}</UniqueIdentifier>
-    </Filter>
     <Filter Include="system\define\color">
       <UniqueIdentifier>{83f554b4-cf83-45cf-b8c4-43f5ceaf587a}</UniqueIdentifier>
     </Filter>
@@ -193,24 +190,6 @@
     <ClInclude Include="program\power.h">
       <Filter>system\status</Filter>
     </ClInclude>
-    <ClInclude Include="program\Collider.h">
-      <Filter>system\collider</Filter>
-    </ClInclude>
-    <ClInclude Include="program\CircleCollider.h">
-      <Filter>system\collider</Filter>
-    </ClInclude>
-    <ClInclude Include="program\CheckCollider.h">
-      <Filter>system\collider</Filter>
-    </ClInclude>
-    <ClInclude Include="program\BoxCollider.h">
-      <Filter>system\collider</Filter>
-    </ClInclude>
-    <ClInclude Include="program\ColliderManager.h">
-      <Filter>system\collider</Filter>
-    </ClInclude>
-    <ClInclude Include="program\ObjectType.h">
-      <Filter>system\collider</Filter>
-    </ClInclude>
     <ClInclude Include="program\SystemConfig.h">
       <Filter>system\config</Filter>
     </ClInclude>
@@ -273,6 +252,9 @@
     </ClInclude>
     <ClInclude Include="program\Rect.h">
       <Filter>system\Math2D</Filter>
+    </ClInclude>
+    <ClInclude Include="program\ColliderComp.h">
+      <Filter>system\ECS\Component\collider</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

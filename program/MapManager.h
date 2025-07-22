@@ -6,20 +6,20 @@
 class GameObject;
 class MapManager {
 	//	描画
-	MapRender render;
+	MapRender render_;
 
 	//	データ
-	MapData mapData;
+	MapData mapData_;
 
 	//	ハンドル
-	TileTextureRegistry registry;
+	TileTextureRegistry registry_;
 
 	//	ハンドルを格納してるファイルのパス
 	std::string handle_path_ = "res/map/handle/data.xml";
-	std::string map_data_path = "res/map/data/map_data.txt";
+	std::string map_data_path_ = "res/map/data/map_data.txt";
 
 public:
-	void CheckCollision(const GameObject& gameObj);
+	void CheckCollision( GameObject& gameObj);
 
 	//	マップデータの読込
 	void Load();
