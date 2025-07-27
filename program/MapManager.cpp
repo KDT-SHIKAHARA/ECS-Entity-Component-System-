@@ -40,6 +40,9 @@ void MapManager::CheckCollision( GameObject& gameObj){
 	const int bottom = (objRect.y + objRect.h) / tile_size;
 
 	//	マップ外に出たら当たり判定を終了する
+	auto rigit_ptr = gameObj.GetComponent<RigidbodyComp>();
+
+
 
 	//	マップ内の数字で当たり判定
 	for (int y = top; y <= bottom; y++) {
@@ -80,10 +83,20 @@ void MapManager::CheckCollision( GameObject& gameObj){
 				else {
 					auto tmp_vec = (gameobj_velo.y > 0) ? -overlap_y : overlap_y;
 					gameObj.transform.Translate(Vector2D<float>{0, tmp_vec});
-					auto rigit = gameObj.GetComponent<RigidbodyComp>();
-					rigit->isGravity_.Set(false);
-					rigit->isGrounded_.Set(true);
-					//	設置フラグと移動量を戻せ
+
+					//	下方向なら
+					//  接地フラグを立てる。
+					//	重力フラグを折る
+					if (gameobj_velo.y > 0)
+					{
+						rigit_ptr->SetVelocity({ rigit_ptr->velocity().x,0 });
+						rigit_ptr->isGravity_.Set(false);
+						rigit_ptr->isGrounded_.Set(true);
+					}
+
+				
+					//	移動量をなくす
+					
 
 				}
 
